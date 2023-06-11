@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header value="logo">HoshmandLab</header>
+    <main value="content">
+      <article>
+        in most of the things can be achieved if we are bold enough and bet on
+        ourself that we can do that
+      </article>
+    </main>
+    <script>
+      const logo = document.querySelector("header");
+      const html = document.querySelector("html");
+      function update(bgColor, fontSize) {
+        html.style.backgroundcolor = bgColor;
+        html.style.fontsize = fontSize;
+      }
+      logo.addEventListener("change", () => {
+        logo.value === "logo" ? ("red", "12px") : ("green", "30px");
+      });
+    </script>
+  </body>
+</html>
