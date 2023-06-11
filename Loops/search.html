@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <style>
+      body {
+        background-color: rgb(150, 147, 147);
+      }
+      p {
+        color: rgba(235, 241, 244, 0.851);
+        background-color: rgb(92, 0, 183);
+        padding: 30px;
+        font-family: sans-serif;
+        font-size: 32px;
+      }
+      label {
+        font-size: 1.2em;
+      }
+      input {
+        background-color: azure;
+        padding: 9px;
+        border-radius: 6px;
+        outline: none;
+        font-size: 1.2em;
+      }
+      button {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgba(46, 252, 252, 0.83);
+        color: rgb(9, 10, 10);
+      }
+    </style>
+  </head>
+  <body>
+    <label for="search">Search your name</label><br />
+    <input id="search" type="text" />
+    <button>Search</button>
+    <p></p>
+
+    <script>
+      const courses = [
+        "Machine learning",
+        "Deep learning",
+        "Python",
+        "JavaScript",
+      ];
+      const para = document.querySelector("p");
+      const input = document.querySelector("input");
+      const button = document.querySelector("button");
+      button.addEventListener("click", () => {
+        const searchName = input.value.toLowerCase();
+        input.value = "";
+        para.textContent = "";
+        for (var i = 0; i < courses.length; i++) {
+          if (courses[i].toLowerCase() === searchName) {
+            para.textContent = courses[i] + " is in the list";
+            break;
+          }
+        }
+        if (para.textContent === "") {
+          para.textContent = "Course not found!";
+        }
+      });
+    </script>
+  </body>
+</html>
