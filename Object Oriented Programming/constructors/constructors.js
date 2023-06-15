@@ -2,9 +2,19 @@
 
 constructor is a special method of a class for creating and initializing and creating an object instance of that class
 
-in a class, there can be only one method with the name of class
+in a class, there can be only one method with the name of constructor
 
 A constructor can use the super keyword to call the constructor of the super class.
+
+
+a constructor will:
+
+1. Create a new object
+2. bind this to the new object
+3. run the code in the constructor
+4. return the new object
+
+in fact a constructor will generate a special initialization.
 
 */
 
