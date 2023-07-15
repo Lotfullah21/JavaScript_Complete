@@ -35,7 +35,7 @@ name = "mahmood"
 console.log(name) // Error
 </code>
 
-<h5>const</h5>
+<h5>var</h5>
 it is a general case of both, we can re-assign values to a variable
 <code>
 var name = "ahmad"
