@@ -5,7 +5,7 @@ console.log("Hello world");
 document.write("Hello, I am from document.write()");
 var person = "king";
 console.log("Hello", person);
-console.log("Helll", person);
+console.log("Hello", person);
 console.log(4 > 3);
 console.log(4 > 3 && 5 > 0);
 console.log(4 == 5 || 4 == 0);
