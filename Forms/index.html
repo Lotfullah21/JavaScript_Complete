@@ -19,6 +19,19 @@
           onchange="check()"
           required /></label
       ><br />
+      <label for="yes_name">Name?</label>
+      <input
+        type="checkbox"
+        id="yes_name"
+        value="yes"
+        onchange="pickName()"
+      /><br />
+      <div id="showName">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" placeholder="name" />
+      </div>
+      <br />
+
       <!-- if the value on return of check() is false, do not sumbit the form -->
       <input type="submit" value="Confirm" onclick="return check();" />
     </form>

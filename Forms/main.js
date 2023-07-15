@@ -6,3 +6,13 @@ function check() {
     return false;
   }
 }
+
+function pickName() {
+  if (document.getElementById("yes_name").checked) {
+    document.getElementById("showName").style.display = "inline";
+    document.getElementById("name").setAttribute("required", true);
+  } else {
+    document.getElementById("name").removeAttribute("required");
+    document.getElementById("showName").style.display = "none";
+  }
+}
