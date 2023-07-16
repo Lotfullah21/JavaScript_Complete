@@ -1,3 +1,5 @@
+// we use parameters when we declare a function and arguments when calling a function.
+
 function courses(a, b, c) {
   compact = "These are the courses offered by " + c + ", " + b + ", " + a;
   console.log(compact);
@@ -39,3 +41,19 @@ function letterFinder(word, match) {
 word = "king";
 match = "i";
 letterFinder(word, match);
+
+// by default functions return undefined value, if we want to return a value,we use a return keyword at the end of a function. note that after return statement, no lines of codes will be running.
+
+function cal(a, b) {
+  console.log(a + b);
+}
+
+cal(12, 12); // outputs 24 and return undefined
+
+function calc(a, b) {
+  console.log("by console.log", a + b);
+  return `by return ${a + b}`;
+}
+
+summation = calc(12, 12);
+console.log(summation); // since we return a value,we need to save them in some place and print to the screen
