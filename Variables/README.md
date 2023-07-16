@@ -39,7 +39,7 @@ console.log(name) // Error
 it is a general case of both, we can re-assign values to a variable
 <code>
 var name = "ahmad"
-name = "mahmood"
+name = "mahmood"****
 console.log(name) // mahmood
 </code>
 
@@ -52,3 +52,82 @@ addition of two strings are known as concatenation.
 <h4>backticks</h4>
 <p>an easy technique to use it with strings</p>
 <h5>syntax: `{variable name}`</h5>
+
+<h2>Numbers</h2>
+while declaring numbers in Javascript,we do not declare the type of number, whether it be a decimal or an integer, Javascript will figure out that one.
+
+<p> we can do -,*,/ operations on two string which has value of a number.
+but for  addition, that would be a concatenation.</p>
+
+<h2>Data Types</h2>
+<h3>data type of a value can specifiy which kind of operation can be done on that data</h3>
+<p>in javascript we have total of 7 different data types</p>
+<ol>
+  <li>Primitives</li>
+  <li>Object</li>
+</ol>
+<h5>Primitives</h5>
+<ol>
+  <li>Number</li>
+  <li>String</li>
+  <li>Boolean</li>
+  <li>Undefined</li>
+  <p>Represents an uninitialized or undeclared variable. If a variable is declared but not assigned a value, it is automatically assigned the value undefined.</p>
+  <li>Null</li>
+  <p>Represents the intentional absence of any object value.</p>
+  <li>Symbol</li>
+  
+</ol>
+
+<h5>Object</h5>
+<ol>
+  <li>Array</li>
+  <p> Represents an ordered list of values, which can be of any type. Arrays are created using square brackets ([]). For example: [1, 2, 3], ['apple', 'banana', 'orange'].</p>
+  <li>Function</li>
+  <p>Represents a reusable block of code that can be invoked by its name. Functions are objects in JavaScript and can be assigned to variables, passed as arguments, and returned from other functions.</p>
+  <li>Objects</li>
+  <p> Represents a collection of key-value pairs, where values can be of any type. Objects can be created using object literals ({}) or using the new keyword and a constructor function.</p>
+</ol>
+<span></span>
+
+<p></p>
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<ul>
+  <li></li>
+</ul>
+<span></span>
+<p></p>
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<ul>
+  <li></li>
+</ul>
+<span></span>
+<p></p>
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<ul>
+  <li></li>
+</ul>
+<span></span>
+<p></p>
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<ul>
+  <li></li>
+</ul>
+<span></span>
+<p></p>

@@ -12,6 +12,26 @@ const name_ = "Lotfullah";
 const greeting = "Hello, " + name_;
 console.log(greeting);
 
+console.log("cat"[0]);
+console.log("cat".charAt(1));
+
+console.log("cat".charAt(2));
+
+const a = "9";
+const b = "2";
+
+if (a > b) {
+  console.log(`${a} is greater than ${b}`);
+} else if (a < b) {
+  console.log(`${b} is greater than ${a}`);
+}
+function areEqualCaseInsensitive(str1, str2) {
+  return str1.toUpperCase() === str2.toUpperCase();
+}
+console.log(areEqualCaseInsensitive(a, b));
+
+// concatenation: adding two strings
+
 // const name = "Chris";
 // const greeting = `Hello, ${name}`;
 // console.log(greeting); // "Hello, Chris"
