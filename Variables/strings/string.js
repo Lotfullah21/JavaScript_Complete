@@ -15,3 +15,10 @@ function areEqualCaseInsensitive(str1, str2) {
   return str1.toUpperCase() === str2.toUpperCase();
 }
 console.log(areEqualCaseInsensitive(a, b));
+
+// concatenation: adding two strings
+
+const country = "Afg";
+const province = "Baghlan";
+const address = country + " " + province;
+console.log("Address:", address);

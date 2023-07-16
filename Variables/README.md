@@ -44,3 +44,11 @@ console.log(name) // mahmood
 </code>
 
 <p>it is your choice,whichever you prefer</p>
+<h2>Strings</h2>
+strings are sequence of characters.
+<h4>Concatenation</h4>
+addition of two strings are known as concatenation.
+<h5>syntax: string1 + string2</h5>
+<h4>backticks</h4>
+<p>an easy technique to use it with strings</p>
+<h5>syntax: `{variable name}`</h5>

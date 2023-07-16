@@ -1,5 +1,12 @@
+// Strings
 const bigmouth = "I've got no right to take my place…";
 console.log(bigmouth);
+// concatenation: adding two strings
+
+const country = "Afg";
+const province = "Baghlan";
+const address = country + " " + province;
+console.log("Address:", address);
 
 const name_ = "Lotfullah";
 const greeting = "Hello, " + name_;
