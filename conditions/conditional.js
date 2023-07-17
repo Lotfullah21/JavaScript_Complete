@@ -1,3 +1,17 @@
+// the code block is depends on the conditin, if the condition is true, the code will be exectuted.
+//  syntax: if (condition){
+// codeblock;
+// }
+
+if (true) {
+  console.log("the value is true");
+}
+
+const value1 = 1 < 2;
+if (value1) {
+  console.log("Hello");
+}
+
 let hardWork = true;
 let jobDone;
 let jobNotDone;
@@ -58,4 +72,4 @@ function trinary(x) {
   return x > 0 ? "hee" : "no";
 }
 
-console.log(trinary(3));
+console.log(trinary(-1));

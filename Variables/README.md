@@ -73,9 +73,9 @@ but for  addition, that would be a concatenation.</p>
   <li>String</li>
   <li>Boolean</li>
   <li>Undefined</li>
-  <p>Represents an uninitialized or undeclared variable. If a variable is declared but not assigned a value, it is automatically assigned the value undefined.</p>
+  <p>Represents an uninitialized or undeclared variable. If a variable is declared but not assigned a value, it is automatically assigned the value undefined,or object cannot find a value for the present variable</p>
   <li>Null</li>
-  <p>Represents the intentional absence of any object value.</p>
+  <p>Represents the intentional absence of any object value, or developer assigned a null value</p>
   <li>Symbol</li>
   
 </ol>

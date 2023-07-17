@@ -26,6 +26,8 @@ console.log(cities);
 
 // console.log(newLength);
 
+// concat method
+
 // pop() removes last element of the array
 cities.pop();
 console.log(cities);
