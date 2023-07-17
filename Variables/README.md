@@ -20,7 +20,7 @@ country = "India"
 <h4>let, const & var </h4>
 <p>in the latest version of javascript, the var has been replaced by let and const</p>
 <h5>let</h5>
-we can re-assign the values,for instance
+we can re-assign the values later and also declare and assign values later,for instance
 <code>
 let name = "ahmad"
 name = "mahmood"
@@ -28,8 +28,9 @@ console.log(name) // mahmood
 </code>
 
 <h5>const</h5>
-once a value is assigned, we cannot change the value
+once a value is assigned, we cannot change the value, and also in the initialization phase, the value should be decalred.
 <code>
+const namel >wrong, the value must be assigned
 const name = "ahmad"
 name = "mahmood"
 console.log(name) // Error
