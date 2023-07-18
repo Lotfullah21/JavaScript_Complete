@@ -1,5 +1,6 @@
-<h2>Variables</h2>
+\*\*<h2>Variables</h2>
 variables are the basic blocks of programming.
+
 <ol>
 they allow us to
 <li>store values</li>
@@ -89,10 +90,28 @@ but for  addition, that would be a concatenation.</p>
   <li>Objects</li>
   <p> Represents a collection of key-value pairs, where values can be of any type. Objects can be created using object literals ({}) or using the new keyword and a constructor function.</p>
 </ol>
-<span></span>
 
-<p></p>
-<h1></h1>
+<h3>Falsy and Truthy</h3>
+<p>all values except " ",' ',0,-0,NAN,undefined,false,null are truthy which means even if the boolean condition is not there, they will return true or evaluates to true.</p>
+<code>
+text = "salam"
+if (text){
+  console.log("truthy value")
+}else{
+  console.log("Flsey value")
+}
+
+the above piece of code evaluates to True.
+
+text = ""
+if (text){
+console.log("truthy value")
+}else{
+console.log("Falsy value")
+}
+evaluates to Falsy and will print "Falsy value"
+</code>
+
 <h2></h2>
 <h3></h3>
 <h4></h4>
@@ -101,7 +120,6 @@ but for  addition, that would be a concatenation.</p>
   <li></li>
 </ul>
 <span></span>
-<p></p>
 <h1></h1>
 <h2></h2>
 <h3></h3>
@@ -110,25 +128,4 @@ but for  addition, that would be a concatenation.</p>
 <ul>
   <li></li>
 </ul>
-<span></span>
-<p></p>
-<h1></h1>
-<h2></h2>
-<h3></h3>
-<h4></h4>
-<h5></h5>
-<ul>
-  <li></li>
-</ul>
-<span></span>
-<p></p>
-<h1></h1>
-<h2></h2>
-<h3></h3>
-<h4></h4>
-<h5></h5>
-<ul>
-  <li></li>
-</ul>
-<span></span>
-<p></p>
+**

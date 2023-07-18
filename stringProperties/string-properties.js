@@ -26,9 +26,6 @@ console.log(home.trim()); // trim the wide space from the end and begining of a 
 console.log(home.startsWith("love"));
 console.log(home.trim().toUpperCase().startsWith("LOVE"));
 console.log(home.includes("kab"));
-console.log(home.slice(7)); // slice the string starting from 7th index.
-console.log(home.slice(0, 10)); // slice the string starting from 7th index.
-console.log(home.slice(-5));
 
 /* template literals
 introduced in ES6, 
@@ -54,4 +51,12 @@ function hello({ lName, fName }) {
   return fullName;
 }
 
-hello({ fName: "Barak", lName: "obama" });
+// In JavaScript, the slice() method is used to extract a portion of an array or a string and returns a new array or string containing the extracted elements.
+// slice returns the grabbed or cutted elements of the string.
+let house = "abcdefghijklmnopqr";
+
+console.log("SLICING STARTED FROM HERE");
+console.log(house.slice(0, 10)); // slice the string starting from 0th index and remove 10 elements
+console.log(house.slice(7)); // slice the string starting from 7th index and grab it.
+console.log(house.slice(0, 10)); // slice the string starting from 0th index and remove 10 elements
+console.log(house.slice(-5)); // take from last indices.
