@@ -11,14 +11,16 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>modal</title>
+    <title>scroll</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav class="navbar" id="navbar">
         <div class="nav-center">
           <div class="nav-header">
-            <h2 class="nav-logo">Hoshmand <span>Lab</span></h2>
+            <h2 class="nav-logo">
+              <a href="#navbar">Hoshmand<span>Lab</span></a>
+            </h2>
             <button class="nav-toggle"><i class="fas fa-bars"></i></button>
           </div>
           <div class="navlinks-container">
@@ -56,14 +58,10 @@
           </div>
         </div>
       </nav>
-      <div class="banner">
+      <div class="banner" id="banner">
         <div class="container">
-          <h1>HoshmandLab</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-            quisquam iste. Sint consequuntur perferendis saepe, rem nam autem?
-            Accusamus, rerum.
-          </p>
+          <!-- <h1>HoshmandLab</h1> -->
+          <h4>We fight the darkness</h4>
           <a href="#home" class="btn btn-link scroll-link">explore courses</a>
         </div>
       </div>
@@ -73,17 +71,51 @@
       <div class="title">
         <h2>our <span>Home</span></h2>
       </div>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+          perspiciatis assumenda laudantium deserunt magni! Eaque nam cumque at
+          repellat dolorum neque commodi officia accusamus! Doloribus magni,
+          officiis architecto alias id eum vero consequatur totam blanditiis sed
+          accusantium fuga inventore aspernatur eos cum, quidem pariatur
+          eveniet, deleniti in amet. Accusantium, cupiditate. Lorem ipsum dolor,
+          sit amet consectetur adipisicing elit. Aspernatur inventore veniam est
+          explicabo mollitia aliquam consequuntur quo veritatis a adipisci
+          nostrum natus doloribus, fugit facilis temporibus reprehenderit eaque
+          autem? Ipsum!
+        </p>
+      </div>
     </section>
     <!-- courses -->
     <section class="section" id="courses">
       <div class="title">
-        <h2>about <span>Us</span></h2>
+        <h2>courses</h2>
+      </div>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+          perspiciatis assumenda laudantium deserunt magni! Eaque nam cumque at
+          repellat dolorum neque commodi officia accusamus! Doloribus magni,
+          officiis architecto alias id eum vero consequatur totam blanditiis sed
+          accusantium fuga inventore aspernatur eos cum, quidem pariatur
+          eveniet, deleniti in amet. Accusantium, cupiditate.
+        </p>
       </div>
     </section>
     <!-- projects -->
     <section class="section" id="projects">
       <div class="title">
-        <h2>about <span>Us</span></h2>
+        <h2>projects</h2>
+      </div>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+          perspiciatis assumenda laudantium deserunt magni! Eaque nam cumque at
+          repellat dolorum neque commodi officia accusamus! Doloribus magni,
+          officiis architecto alias id eum vero consequatur totam blanditiis sed
+          accusantium fuga inventore aspernatur eos cum, quidem pariatur
+          eveniet, deleniti in amet. Accusantium, cupiditate.
+        </p>
       </div>
     </section>
     <!-- about -->
@@ -93,10 +125,11 @@
       </div>
     </section>
     <!-- footer -->
-    <footer class="section">
+    <hr />
+    <footer class="footer">
       <div class="footer-text">
         <p>
-          Copyright &copy; HoshmandLab <span class="date"></span>. All rights
+          Copyright &copy; HoshmandLab <span id="date"></span>. All rights
           resereved
         </p>
       </div>
@@ -119,9 +152,13 @@
           </a>
         </li>
       </ul>
+      <!-- back to top -->
+      <a href="#navbar" class="scroll-link top-link"
+        >Back to the top <i class="fas fa-arrow-up"></i
+      ></a>
     </footer>
     <!-- back to top -->
-    <a href="#home" class="scroll-link top-link"
+    <a href="#header" class="scroll-link top-fixed-link"
       ><i class="fas fa-arrow-up"></i
     ></a>
     <!-- java script -->
