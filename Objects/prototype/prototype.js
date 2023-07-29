@@ -6,11 +6,11 @@ function University(name, location, students) {
   this.name = name;
   this.location = location;
   this.students = students;
-  /*
-  this.student = function (student) {
-  this.students = this.students + student;
-  return `${this.name} have ${this.students} students`;}; 
-  */
+
+  // this.student = function (student) {
+  //   this.students = this.students + student;
+  //   return `${this.name} have ${this.students} students`;
+  // };
 }
 
 /* we are adding this property to the University to avoid adding this every time as a parameter and hard coding inside the constructor
@@ -31,10 +31,22 @@ const MIT = new University(
 console.log(MIT);
 console.log(MIT.numStudent(21));
 const CMU = new University("Carnegie Mellon", "Pitsburgh USA", 13961);
-console.log(CMU);
-console.log(CMU.numStudent(21));
-console.log(MIT.region);
 console.log(Object.getPrototypeOf(MIT));
+// new constructor
+function Country(name, population) {
+  this.name = name;
+  this.pastCal = population;
+  this.present;
+}
+Country.prototype.place = "on Earth";
+Country.prototype.population = function countHumans(totalHumans) {
+  this.present = this.pastCal + totalHumans;
+  return `${this.name} have ${this.population} humans in it.`;
+};
+const afg = new Country("Afghanistan", 12000);
+console.log(afg);
+console.log(Country.prototype);
+console.log(Object.getPrototypeOf(afg));
 // Object.getPrototypeOf it is the end of prototype chain where there is no method and the value is null
 const myObjec = {
   field: "technology",
@@ -54,9 +66,7 @@ const personPrototype = {
 function Person(name) {
   this.name = name;
 }
-
 Object.assign(Person.prototype, personPrototype);
-
 const me = new Person("Ahmed");
 me.greet();
 

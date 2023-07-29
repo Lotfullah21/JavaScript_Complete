@@ -6,7 +6,7 @@ function GiveInfo(name, region) {
   this.info = function () {
     return `${this.name} is located in  ${this.region}`;
   };
-  console.log("points to particular object", this);
+  console.log("points to particular this object", this);
 }
 // new keyword creates a new object, points this new object to the blue print and omits the return(no need to write explicitly return)
 const afg = new GiveInfo("Afghanistan", "central Asia");

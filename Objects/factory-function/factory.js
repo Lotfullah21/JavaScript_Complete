@@ -15,7 +15,7 @@ const afg = givInfo("Afghanistan", "Asia");
 const ind = givInfo("India", "South Asia");
 const usa = givInfo("United State of America", "North America");
 
-console.log(afg.fullIfo());
+console.log("name", afg.name, "\n", afg.fullIfo());
 console.log(ind.fullIfo());
 console.log(usa.fullIfo());
 
