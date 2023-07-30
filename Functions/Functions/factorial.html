@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>factorial</title>
+    <style>
+      input {
+        padding: 40px;
+        font-size: 40px;
+      }
+
+      p {
+        background-color: rgb(196, 209, 209);
+        color: rgb(0, 0, 0);
+        font-family: "Times New Roman", Times, serif;
+        font-size: xx-large;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" class="numBox" />
+    <p></p>
+
+    <script>
+      function square(num) {
+        return num * num;
+      }
+      function squareRoot(num) {
+        return num ** 0.5;
+      }
+      function cubic(num) {
+        return num * num * num;
+      }
+      const input = document.querySelector(".numBox");
+      const para = document.querySelector("p");
+      input.addEventListener("change", () => {
+        const num = parseFloat(input.value);
+
+        // const num = input.value;
+        if (isNaN(num)) {
+          para.textContent = "You need to enter a number!";
+        } else {
+          para.textContent = `${num} squared is ${square(num)}\n. `;
+          para.textContent += `${num} square root is ${squareRoot(num)}\n. `;
+          para.textContent += `${num} power to 3 is ${cubic(num)}\n. `;
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input class="textBox" type="text" />
+    <h2></h2>
+
+    <script>
+      const textBox = document.querySelector(".textBox");
+      const placeholder = document.querySelector("h2");
+      textBox.addEventListener("keydown", (event) => {
+        const x = " ";
+        placeholder.textContent = "you are pressing " + event.key + " ";
+      });
+    </script>
+  </body>
+</html>
