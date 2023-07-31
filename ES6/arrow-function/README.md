@@ -12,3 +12,9 @@ and also cannot use yield inside its body</p>
 <li>set them as expression  unless using in callback(later)</li>
 <li>assign them to a variable</li>
 </ol>
+<h3>Arrow function Scoping</h3>
+<p>in regular function, this refers to what ever is there on the left side of the object<p>
+<p>in arrow function, this refers to the surrounding scope which in most of the cases are global scope.</p>
+
+<h3>Default Parameter</h3>
+<p>if we do not pass any arguments, the default parameter will take precedence, if argument passed the default parameter will be over written.</p>
