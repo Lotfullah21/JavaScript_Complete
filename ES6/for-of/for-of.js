@@ -1,7 +1,7 @@
 const countries = ["India", "Iran", "Japan", "China", "Belgium"];
 
 for (const country of countries) {
-  //   console.log(country);
+  console.log(country);
 }
 for (const country of countries) {
   if (country === "Iran") {
