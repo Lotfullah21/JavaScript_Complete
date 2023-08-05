@@ -1,13 +1,13 @@
-const url = "https://randomuser.me/api/";
+import fetchUser from "./utils/fetch-user.js";
+import get from "./utils/get-element.js";
+import displayUser from "./utils/display-user.js";
 
-function getElement(selector) {
-  const element = document.querySelector(selector);
-  if (element) {
-    return element;
-  } else {
-    return `${selector} does not exist`;
-  }
-}
+const btn = get(".random-user");
 
-const userName = getElement(".user-name");
-console.log(userName);
+const showUser = async () => {
+  const data = await fetchUser();
+  displayUser(data);
+};
+
+btn.addEventListener("click", showUser);
+document.addEventListener("DOMContentLoaded", showUser);

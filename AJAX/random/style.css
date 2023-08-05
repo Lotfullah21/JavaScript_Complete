@@ -255,7 +255,7 @@ Section
   margin: 2rem auto;
 }
 
-.user-name {
+.user-title {
   color: var(--clr--grey-600);
   font-size: 1.2rem;
 }
@@ -273,21 +273,19 @@ Section
   margin: 1rem 0;
 }
 
-.values-list button {
+.icon {
+  background: transparent;
+  font-size: 1.5rem;
   cursor: pointer;
-  color: var(--clr--primary-500);
-  background: var(--clr-grey-100);
-  border: none;
-  font-size: 1.2rem;
+  color: var(--clr--primary-700);
   transition: var(--transition);
+  border: none;
 }
-
-.values-list button:hover {
-  color: var(--clr--primary-900);
+.icon:hover {
+  color: var(--clr--primary-600);
 }
-
 .active {
-  color: var(--clr--purble-dark);
+  color: var(--clr--blue-light);
 }
 
 @media screen and (min-width: 800px) {
