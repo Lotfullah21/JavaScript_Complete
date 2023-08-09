@@ -1,6 +1,6 @@
 const paginate = (following) => {
   console.log(following);
-  const itemsPerPage = 2;
+  const itemsPerPage = 9;
   const numberOfPages = Math.ceil(following.length / itemsPerPage);
   console.log("number of pages", numberOfPages);
   //  create array of arrays, number of pages means how many array do you want, here we want to move dynamically, so that is based on our needs

@@ -1,8 +1,8 @@
-const url = "https://api.github.com/users/john-smilga/followers?per_page=100";
-const me = `https://api.github.com/users/Lotfullah21/following`;
+const url = "https://api.github.com/users/karpathy/followers?per_page=100";
+const me = "https://github.com/Lotfullah21?tab=following";
 const fetchFollowers = async (username, token) => {
   try {
-    const response = await fetch(me, {
+    const response = await fetch(url, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -19,8 +19,7 @@ const fetchFollowers = async (username, token) => {
     console.log(error);
   }
 };
-const accessToken =
-  "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";
+const accessToken = "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";
 const githubUsername = "Lotfullah21";
 
 const fetchPoeple = fetchFollowers(githubUsername, accessToken);

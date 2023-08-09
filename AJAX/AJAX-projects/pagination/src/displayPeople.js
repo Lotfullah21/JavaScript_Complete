@@ -8,7 +8,7 @@ const displayFollowing = (people) => {
       return `<article class="card">
       <img src="${avatar_url}" alt="${login}">
       <h4>${login}</h4>
-        <a href="${html_url} class="btn">visit profile</a>
+        <a href="${html_url}" class="btn">visit profile</a>
       </article>`;
     })
     .join("");
