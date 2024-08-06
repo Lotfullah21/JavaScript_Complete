@@ -59,7 +59,7 @@ const newString = newArr.join(",");
 console.log("Converted string: ", newString);
 
 for (let i = 0; i < newArr.length; i++) {
-  console.log(i + 1, newArray[i]);
+	console.log(i + 1, newArray[i]);
 }
 console.log("\n");
 
@@ -68,10 +68,10 @@ const webSubjects = ["JavaScript", "Java", "Python", "React", "HTML/CSS"];
 const field = "Artificial intelligence";
 const webField = "Web Development";
 for (let i = 0; i < AISubjects.length; i++) {
-  console.log(i + 1, `${AISubjects[i]} ${field}`);
+	console.log(i + 1, `${AISubjects[i]} ${field}`);
 }
 console.log("\n");
 for (let i = 0; i < webSubjects.length; i++) {
-  console.log(i + 1, `${webSubjects[i]} ${webField}`);
+	console.log(i + 1, `${webSubjects[i]} ${webField}`);
 }
 console.log("\n");
