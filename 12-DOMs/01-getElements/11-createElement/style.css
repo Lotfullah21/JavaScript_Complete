@@ -1,0 +1,26 @@
+.color {
+	color: white;
+	background: red;
+	border: 1.1px solid transparent;
+}
+
+.text {
+	color: white;
+	background: blue;
+	font-size: 0.2rem;
+	text-transform: capitalize;
+}
+
+.title {
+	padding: 3rem;
+	color: white;
+	background: black;
+	font-size: 1.4;
+}
+
+.underline {
+	color: blue;
+	text-decoration: underline;
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Confirmation</title>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <form>
+      <label for="email_1"
+        >Email: <input type="email" id="email_1" name="first-email" /></label
+      ><br />
+      <label for="repeated-email"
+        >Repeat:<input
+          type="email"
+          id="repeated-email"
+          name="confirm-email"
+          onchange="check()"
+          required /></label
+      ><br />
+      <label for="yes_name">Name?</label>
+      <input
+        type="checkbox"
+        id="yes_name"
+        value="yes"
+        onchange="pickName()"
+      /><br />
+      <div id="showName">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" placeholder="name" />
+      </div>
+      <br />
+
+      <!-- if the value on return of check() is false, do not sumbit the form -->
+      <input type="submit" value="Confirm" onclick="return check();" />
+    </form>
+  </body>
+</html>

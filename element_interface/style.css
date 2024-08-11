@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  padding: 50px;
+}
+
+.lab {
+  width: 300px;
+  height: 120px;
+}
