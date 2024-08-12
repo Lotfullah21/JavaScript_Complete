@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>courses-filter</title>
+	</head>
+	<body>
+		<section class="courses">
+			<div class="title">
+				<h2>کورس ها</h2>
+				<div class="underline"></div>
+			</div>
+			<div class="btn-container">
+				<button class="btn filter-btn">All</button>
+				<button class="btn filter-btn">python</button>
+				<button class="btn filter-btn">java script</button>
+				<button class="btn filter-btn">html-css</button>
+				<button class="btn filter-btn">deep learning</button>
+			</div>
+			<div class="section-center">
+				<!-- single course -->
+				<article class="course">
+					<img
+						src="../assets/products/deep-learning.png"
+						alt=""
+						class="img course-photo" />
+					<div class="course-info">
+						<header>
+							<h5>deep learning</h5>
+							<span class="duration">4-months</span>
+						</header>
+						<p class="course-text">
+							lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Quae quam consequuntur corrupti, maxime cupiditate neque vero
+						</p>
+					</div>
+				</article>
+				<!-- end of single course -->
+				<!-- single course -->
+				<article class="course">
+					<img
+						src="../assets/products/deep-learning.png"
+						alt=""
+						class="img course-photo" />
+					<div class="course-info">
+						<header>
+							<h5>deep learning</h5>
+							<span class="duration">4-months</span>
+						</header>
+						<p class="course-text">
+							lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Quae quam consequuntur corrupti, maxime cupiditate neque vero
+						</p>
+					</div>
+				</article>
+				<!-- end of single course -->
+				<!-- single course -->
+				<article class="course">
+					<img
+						src="../assets/products/deep-learning.png"
+						alt=""
+						class="img course-photo" />
+					<div class="course-info">
+						<header>
+							<h5>deep learning</h5>
+							<span class="duration">4-months</span>
+						</header>
+						<p class="course-text">
+							lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Quae quam consequuntur corrupti, maxime cupiditate neque vero
+						</p>
+					</div>
+				</article>
+				<!-- end of single course -->
+				<!-- single course -->
+				<article class="course">
+					<img
+						src="../assets/products/deep-learning.png"
+						alt=""
+						class="img course-photo" />
+					<div class="course-info">
+						<header>
+							<h5>deep learning</h5>
+							<span class="duration">4-months</span>
+						</header>
+						<p class="course-text">
+							lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Quae quam consequuntur corrupti, maxime cupiditate neque vero
+						</p>
+					</div>
+				</article>
+				<!-- end of single course -->
+				<!-- single course -->
+				<article class="course">
+					<img
+						src="../assets/products/deep-learning.png"
+						alt=""
+						class="img course-photo" />
+					<div class="course-info">
+						<header>
+							<h5>deep learning</h5>
+							<span class="duration">4-months</span>
+						</header>
+						<p class="course-text">
+							lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Quae quam consequuntur corrupti, maxime cupiditate neque vero
+						</p>
+					</div>
+				</article>
+				<!-- end of single course -->
+				<!-- single course -->
+				<article class="course">
+					<img
+						src="../assets/products/deep-learning.png"
+						alt=""
+						class="img course-photo" />
+					<div class="course-info">
+						<header>
+							<h5>deep learning</h5>
+							<span class="duration">4-months</span>
+						</header>
+						<p class="course-text">
+							lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Quae quam consequuntur corrupti, maxime cupiditate neque vero
+						</p>
+					</div>
+				</article>
+				<!-- end of single course -->
+			</div>
+		</section>
+
+		<script src="./app.js"></script>
+	</body>
+</html>

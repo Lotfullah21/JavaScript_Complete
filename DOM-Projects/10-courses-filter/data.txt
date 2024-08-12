@@ -20,6 +20,15 @@ courses = [
   {
     id: 1,
     title: "Deep Learning",
+    price: "$32",
+    img: "./assets/images/dl-2.JPEG",
+    description:
+      "loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Id veritatis aut dolorum eveniet ipsam dolore laboriosam vel.",
+    category: "project-b",
+  },
+  {
+    id: 1,
+    title: "Deep Learning",
     price: "$1",
     img: "./assets/images/dl-3.jpg",
     description:
@@ -71,6 +80,42 @@ courses = [
       "loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Id veritatis aut dolorum eveniet ipsam dolore laboriosam vel.",
     category: "deep-learning",
   },
+  // {
+  //   id: 1,
+  //   title: "Web development",
+  //   price: "$01",
+  //   img: "./assets/images/web-1.JPEG",
+  //   description:
+  //     "loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Id veritatis aut dolorum eveniet ipsam dolore laboriosam vel.",
+  //   category: "Web development",
+  // },
+  // {
+  //   id: 1,
+  //   title: "Web development",
+  //   price: "$11",
+  //   img: "./assets/images/web-5.jpg",
+  //   description:
+  //     "loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Id veritatis aut dolorum eveniet ipsam dolore laboriosam vel.",
+  //   category: "Web development",
+  // },
+  // {
+  //   id: 1,
+  //   title: "Web development",
+  //   price: "$91",
+  //   img: "./assets/images/web-3.png",
+  //   description:
+  //     "loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Id veritatis aut dolorum eveniet ipsam dolore laboriosam vel.",
+  //   category: "Web development",
+  // },
+  // {
+  //   id: 1,
+  //   title: "Web development",
+  //   price: "$11",
+  //   img: "./assets/images/web-4.jpg",
+  //   description:
+  //     "loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Id veritatis aut dolorum eveniet ipsam dolore laboriosam vel.",
+  //   category: "Web development",
+  // },
   {
     id: 1,
     title: "Python",
@@ -107,89 +152,7 @@ courses = [
       "loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Id veritatis aut dolorum eveniet ipsam dolore laboriosam vel.",
     category: "Python",
   },
-  {
-    id: 1,
-    title: "Web development",
-    price: "$01",
-    img: "./assets/images/web-1.JPEG",
-    description:
-      "loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Id veritatis aut dolorum eveniet ipsam dolore laboriosam vel.",
-    category: "Web development",
-  },
-  {
-    id: 1,
-    title: "Web development",
-    price: "$11",
-    img: "./assets/images/web-5.jpg",
-    description:
-      "loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Id veritatis aut dolorum eveniet ipsam dolore laboriosam vel.",
-    category: "Web development",
-  },
-  {
-    id: 1,
-    title: "Web development",
-    price: "$91",
-    img: "./assets/images/web-3.png",
-    description:
-      "loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Id veritatis aut dolorum eveniet ipsam dolore laboriosam vel.",
-    category: "Web development",
-  },
-  {
-    id: 1,
-    title: "Web development",
-    price: "$11",
-    img: "./assets/images/web-4.jpg",
-    description:
-      "loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Id veritatis aut dolorum eveniet ipsam dolore laboriosam vel.",
-    category: "Web development",
-  },
 ];
 
-const sectionCenter = document.querySelector(".section-center");
-const filterBtns = document.querySelectorAll(".filter-btn");
-// load all items
-window.addEventListener("DOMContentLoaded", function () {
-  showCourses(courses);
-});
 
-// filter items
-filterBtns.forEach(function (btn) {
-  btn.addEventListener("click", function (e) {
-    const category = e.currentTarget.dataset.id;
-    const courseCategory = courses.filter(function (courseList) {
-      if (courseList.category === category) {
-        return courseList;
-      }
-    });
-    if (category == "all") {
-      showCourses(courses);
-    } else {
-      showCourses(courseCategory);
-    }
-  });
-});
 
-function showCourses(courseList) {
-  let displayCourses = courseList.map(function (item) {
-    return `<article class="course">
-          <img
-            src=${item.img}
-            alt=${item.title}
-            class="course-img"
-          />
-          <div class="course-info">
-            <header class="header">
-              <h5>${item.title}</h5>
-              <span class="price">${item.price}</span>
-            </header>
-            <p class="course-text">
-            ${item.description}
-            </p>
-          </div>
-        </article>`;
-  });
-  // join all data as a single string, we are getting a large array here.
-  // console.log(displayCourses);
-  displayCourses = displayCourses.join("");
-  sectionCenter.innerHTML = displayCourses;
-}
