@@ -105,7 +105,6 @@ function remainingTime() {
 		deadline.innerHTML = `<h4>The deadline has finished</h4>`;
 	}
 }
-// how many time we want to call our remaining function to avoid every time refreshing the page to see the remaining time
+// how many time we want to call our remaining function to avoid every time refreshing the page to see the remaining time,here we are calling the function after every seconds.
 let countDown = setInterval(remainingTime, 1000);
-
 remainingTime();

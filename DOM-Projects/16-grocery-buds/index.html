@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>to-do</title>
+	</head>
+	<body>
+		<div class="section-center">
+			<article class="card">
+				<form class="form">
+					<div class="alert"></div>
+					<h3 class="card-title">Today's To do list</h3>
+					<div class="form-control">
+						<input type="text" id="item-input" placeholder="e.g python" />
+						<button class="btn-submit">submit</button>
+					</div>
+				</form>
+				<!-- list items -->
+				<div class="items-container">
+					<div class="items-list">
+						<!-- <article class="item">
+							<h5 class="task">Grocery bud</h5>
+							<div class="button-container">
+								<button class="add"><i class="fas fa-edit"></i></button>
+								<button class="remove"><i class="fas fa-trash"></i></button>
+							</div>
+						</article> -->
+					</div>
+					<button class="btn-clear">Clear Items</button>
+				</div>
+			</article>
+		</div>
+		<script src="./app.js"></script>
+	</body>
+</html>
