@@ -1,6 +1,10 @@
 ## Objects
 
-Objects are collections of properties and represented using key-value pairs.
+Objects are collections of key(property)-value pairs.
+
+Property values can be `string, numbers, booleans, null, arrays and functions`.
+
+if functions used inside an object, those are called `methods`.
 
 We can create objects using object literals, constructor functions, or the class keyword.
 
