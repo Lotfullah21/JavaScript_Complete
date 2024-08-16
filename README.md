@@ -16,29 +16,27 @@ The repository is organized into multiple directories and files, each focusing o
 
 - **08-Loops/**: Detailed lessons on looping structures such as `for`, `while`, and `do-while` loops.
 
-- **09-strings/**: Manipulation of strings in JavaScript, covering methods and operations.
+- **09-Strings/**: Manipulation of strings in JavaScript, covering methods and operations.
 
-- **10-array/**: Covers arrays, array methods, and how to work with arrays in JavaScript.
+- **10-Array/**: Covers arrays, array methods, and how to work with arrays in JavaScript.
 
-- **11-scope/**: Introduction to scoping rules in JavaScript (function scope, block scope, etc.).
+- **11-Scope/**: Introduction to scoping rules in JavaScript (function scope, block scope, etc.).
 
 - **12-DOMs/**: Introduction to the Document Object Model (DOM) and how to interact with it using JavaScript.
 
 - **14-DOM-Projects/**: Contains practical projects related to DOM manipulation.
 
-- **15-objects/**: Focuses on working with objects in JavaScript, covering properties, methods, and prototypes.
+- **16-objects/**: Focuses on working with objects in JavaScript, covering properties, methods, and prototypes.
 
 - **16-functions-advanced/**: Explores advanced function concepts like closures, callbacks, and higher-order functions.
 
-- **17-ES6/**: Covers modern JavaScript features from ECMAScript 6 (ES6), such as arrow functions, destructuring, template literals, etc.
+- **19-ES6/**: Covers modern JavaScript features from ECMAScript 6 (ES6), such as arrow functions, destructuring, template literals, etc.
 
-- **18-Modules/**: Demonstrates how to structure and work with JavaScript modules for better code organization.
+- **20-Modules/**: Demonstrates how to structure and work with JavaScript modules for better code organization.
 
-- **AJAX/**: Basics of making asynchronous HTTP requests using AJAX.
+- **21-Asynchronous/**: Learn about asynchronous programming, promises, async/await, and how to handle asynchronous tasks.
 
-- **asynchronous/**: Learn about asynchronous programming, promises, async/await, and how to handle asynchronous tasks.
-
-- **element_interface/**: Discusses how JavaScript interacts with HTML elements.
+- **22-AJAX/**: Basics of making asynchronous HTTP requests using AJAX.
 
 - **Errors/**
 
