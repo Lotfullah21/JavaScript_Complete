@@ -1,15 +1,17 @@
-const promise = new Promise((resolve, reject) => {
-	value = 2;
-	if (value) {
-		resolve("promise resolved,Congratulations !!!!!");
+const myPromise = new Promise((resolve, reject) => {
+	// Simulate an asynchronous operation
+	const success = false;
+	if (success) {
+		resolve("The operation was successful!");
+	} else {
+		reject("The operation failed.");
 	}
-	reject("OOPs,Promised denied as you did not wanted");
 });
 
-promise
-	.then((value) => {
-		console.log(value);
+myPromise
+	.then((resolvedValue) => {
+		console.log(resolvedValue);
 	})
-	.catch((error) => {
-		console.log(error);
+	.catch((rejectedValue) => {
+		console.log(rejectedValue);
 	});

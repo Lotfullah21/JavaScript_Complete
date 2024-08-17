@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			body {
+				text-align: center;
+				background: rgb(140, 140, 140);
+			}
+			h1 {
+				text-align: center;
+				height: 3rem;
+				text-transform: capitalize;
+				letter-spacing: 3px;
+				margin-bottom: 3rem;
+			}
+			.btn {
+				padding: 0.6rem 1rem;
+				font-size: 1.5rem;
+				text-decoration: cadetblue;
+				cursor: pointer;
+				background: rgb(126, 2, 2);
+				color: white;
+				border-radius: 5px;
+				border: transparent;
+			}
+			.btn:hover {
+				background: red;
+			}
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			.image-container {
+				width: 30rem;
+				height: 30rem;
+			}
+		</style>
+		<title>promise: real example</title>
+	</head>
+	<body>
+		<h1>Click the button to get a beautiful image</h1>
+		<button class="btn">Click me</button>
+		<div class="image-container"></div>
+		<script src="./app.js"></script>
+	</body>
+</html>

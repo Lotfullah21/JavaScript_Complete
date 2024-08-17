@@ -36,7 +36,12 @@ A promise can be in three states
 
 ## Creating a Promise:
 
-A `Promise` is created using the Promise constructor, which takes a function as an argument. The function itself takes two parameters, `resolve` and `reject`, which are used to either fulfill or reject the promise.
+A `Promise` is created using the Promise constructor, which takes a function as an argument. The function itself takes two parameters which themselves are functions, `resolve` and `reject`, which are used to either fulfill or reject the promise.
+
+```js
+const promise = new Promise((resolve, reject) => {});
+console.log(promise); // Promise {<pending>}
+```
 
 ```js
 const myPromise = new Promise((resolve, reject) => {
@@ -49,6 +54,10 @@ const myPromise = new Promise((resolve, reject) => {
 		reject("The operation failed.");
 	}
 });
+
+myPromise.then((resolvedValue) => {
+	console.log(resolvedValue);
+});
 ```
 
 ## Parameters of the Executor Function:
@@ -60,23 +69,71 @@ const myPromise = new Promise((resolve, reject) => {
 
 We are not eliminating the callbacks using promises, but making it more readable and cleaner using promises.
 
-#### Handling Promises
+## Handling Promises
 
 A promise’s result can be handled by chaining .then() and .catch(). Each then method takes a callback function to deal with the resolved value, and catch takes a callback to handle the rejected promise.
 
-<p>Inside each of <em>then<em> and <em>catch</em> we would be having another callback to deal with. inside <em>then</em> the returned value from resolved promise and inside <em>catch</em> block a callback to handle the rejected promise.</p>
+<p>Inside each of <em>then<em> and <em>catch</em> we would be having another callback to deal with. inside <em>then</em> lives the  returned value from resolved promise and inside <em>catch</em> lives the value from rejected promise.</p>
 
 Promises are handled using `.then()` for fulfilled values and `.catch()` for rejected values. You can also use `.finally()` for cleanup code that should run regardless of the outcome.
 
+### 1. Handling Fulfillment
+
 ```js
+const myPromise = new Promise((resolve, reject) => {
+	const success = true;
+	if (success) {
+		resolve("The operation was successful!");
+	} else {
+		reject("The operation failed.");
+	}
+});
+
+// Handling success case
+myPromise.then((resolvedValue) => {
+	console.log(resolvedValue);
+});
+```
+
+### 2. Handling Rejection
+
+Use `catch` to handle the values returned from `reject` function.
+
+```js
+const myPromise = new Promise((resolve, reject) => {
+	const success = false;
+	if (success) {
+		resolve("The operation was successful!");
+	} else {
+		reject("The operation failed.");
+	}
+});
+
+myPromise.then((resolvedValue) => {
+	console.log(resolvedValue);
+});
+myPromise.catch((rejectedValue) => {
+	console.log(rejectedValue);
+});
+```
+
+### 3. Chain both of them
+
+```js
+const myPromise = new Promise((resolve, reject) => {
+	const success = false;
+	if (success) {
+		resolve("The operation was successful!");
+	} else {
+		reject("The operation failed.");
+	}
+});
+
 myPromise
-	.then((result) => {
-		console.log(result); // Output: "The operation was successful!"
+	.then((resolvedValue) => {
+		console.log(resolvedValue);
 	})
-	.catch((error) => {
-		console.log(error); // Output: "The operation failed." (if rejected)
-	})
-	.finally(() => {
-		console.log("Promise finished."); // This runs no matter the outcome.
+	.catch((rejectedValue) => {
+		console.log(rejectedValue);
 	});
 ```
