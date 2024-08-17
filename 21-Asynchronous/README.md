@@ -1,4 +1,4 @@
-## Key Concepts in JavaScript
+## Few Key Concepts About Asynchronous and Synchronous
 
 ### 1. Single-Threaded
 
