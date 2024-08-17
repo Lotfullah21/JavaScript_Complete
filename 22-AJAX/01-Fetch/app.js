@@ -2,7 +2,7 @@
 const xhr = new XMLHttpRequest();
 
 // Step 2: Configure the request
-xhr.open("GET", "./api/colleges.txt");
+xhr.open("GET", "./api/colleges.json");
 xhr.onreadystatechange = function () {
 	if (xhr.readyState == 4 && xhr.status === 200) {
 		console.log("done");

@@ -92,6 +92,6 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 Few things to start with:
 
-Program:A computer program is a set of instructions that tell a computer what to do in specific circumstances.
-programming language: A bridge that facilitates communication between people and computers.
-avaScript: A language used to build interactivity into web pages.
+`Program`:A computer program is a set of instructions that tells a computer what to do in specific circumstances.
+`programming language `: A bridge that facilitates communication between people and computers.
+`Javascript`: A language used to build interactivity into web pages.
