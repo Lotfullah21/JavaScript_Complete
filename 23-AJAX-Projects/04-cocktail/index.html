@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- font-awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<!-- css -->
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>cocktail</title>
+	</head>
+	<body>
+		<form class="cocktail-form">
+			<h2>cock tail API</h2>
+			<input
+				type="text"
+				placeholder="search for your favorite cocktail"
+				id="cocktail"
+				name="drink" />
+		</form>
+
+		<section class="section cocktails">
+			<!-- If the coffee is not found -->
+			<article class="loading hide-loading"></article>
+			<h2 class="title"></h2>
+			<!-- If your coffee has been found -->
+			<div class="section-center">
+				<!-- single-drink -->
+				<a href="./drink.html">
+					<article class="cocktail-container" data-id="12">
+						<img src="./assets/beans.jpg" alt="dark coffee image" />
+						<h3>Dark Coffee</h3>
+					</article>
+				</a>
+				<!-- end of single-drink -->
+				<!-- single-drink -->
+				<a href="./drink.html">
+					<article class="cocktail-container" data-id="12">
+						<img src="./assets/dark.jpg" alt="dark coffee image" />
+						<h3>Dark Coffee</h3>
+					</article>
+				</a>
+				<!-- end of single-drink -->
+				<!-- single-drink -->
+				<a href="./drink.html">
+					<article class="cocktail-container" data-id="12">
+						<img src="./assets/clock.jpg" alt="dark coffee image" />
+						<h3>Dark Coffee</h3>
+					</article>
+				</a>
+				<!-- end of single-drink -->
+			</div>
+		</section>
+
+		<!-- Javascript -->
+		<script type="module" src="./app.js"></script>
+	</body>
+</html>

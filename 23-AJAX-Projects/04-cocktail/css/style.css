@@ -1,0 +1,378 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--clr-primary-1: rgb(64, 0, 0);
+	--clr-primary-2: rgb(79, 12, 12);
+	--clr-primary-3: rgb(111, 17, 17);
+	--clr-primary-4: rgb(142, 22, 22);
+	--clr-primary-5: rgb(174, 26, 26);
+	--clr-primary-6: rgb(206, 31, 31);
+	--clr-primary-7: rgb(224, 49, 49);
+	--clr-primary-8: rgb(229, 81, 81);
+	--clr-primary-9: rgb(233, 113, 113);
+	--clr-primary-10: rgb(243, 176, 176);
+
+	/* Darker shades */
+	--clr-secondary-1: rgb(1, 13, 18);
+	--clr-secondary-2: rgb(5, 57, 80);
+	--clr-secondary-3: rgb(1, 7, 9);
+	--clr-secondary-4: rgb(12, 144, 203);
+	/* Main color */
+	--clr-secondary-5: rgb(14, 170, 241);
+	/* Lighter shades */
+	--clr-secondary-6: rgb(68, 189, 244);
+	--clr-secondary-7: rgb(66, 188, 244);
+	--clr-secondary-8: rgb(100, 201, 246);
+	--clr-secondary-9: rgb(169, 225, 250);
+	--clr-secondary-10: rgb(238, 249, 254);
+
+	/* Dark grey used for headings */
+	--clr-grey-1: rgb(9, 9, 9);
+	--clr-grey-2: rgb(27, 27, 27);
+	--clr-grey-3: rgb(43, 43, 48);
+	--clr-grey-4: rgb(44, 44, 47);
+	/* Grey used for paragraphs */
+	--clr-grey-5: rgb(25, 27, 29);
+	--clr-grey-6: rgb(137, 137, 137);
+	--clr-grey-7: rgb(155, 155, 155);
+	--clr-grey-8: rgb(222, 228, 233);
+	--clr-grey-9: rgb(242, 242, 242);
+	--clr-grey-10: rgb(244, 246, 248);
+
+	--clr-white: #fff;
+	--clr-black: #000;
+	--transition: all linear 0.31s;
+	--spacing-wide: 0.07em;
+	--spacing-wider: 0.1em;
+	--spacing-per: 0.01em;
+	--shadow-sm: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+	--shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+		0 4px 6px -4px rgb(0 0 0 / 0.1);
+	--shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+		0 8px 10px -6px rgb(0 0 0 / 0.1);
+	--shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+	--max-width-nav: 1492px;
+	--max-width: 1292px;
+	--underline-primary: rgb(14, 170, 241);
+	--underline-secondary: rgb(224, 49, 49);
+
+	/* important colors */
+	--clr-white: rgb(255, 255, 255);
+	--clr-black: #080808;
+	--clr--blue-dark: #1e40af;
+	--clr--blue-light: #3b82f6;
+	--clr--red-dark: #730000;
+	--clr--red-light: #ff0d0d;
+	--clr--green-dark: #008c00;
+	--clr--green-light: #008c00;
+	--clr--purple-light: #590059;
+
+	--smallText: 0.8em;
+	--max-width: 1172px;
+	--fixed-width: 600px;
+	--border-radius: 4px;
+	--shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+}
+
+/* 
+
+=============
+Global styles
+=============
+
+*/
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--clr-grey-7);
+	color: var(--clr-grey-1);
+	line-height: 1.4;
+	font-size: 0.975rem;
+	letter-spacing: var(--spacing-per);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	line-height: 1.25;
+	letter-spacing: var(--spacing-wide);
+}
+
+h1 {
+	font-size: 3rem;
+}
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+}
+h4 {
+	font-size: 0.875rem;
+}
+
+p {
+	color: var(--clr-grey-5);
+	font-size: 1rem;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* to remove under scores */
+a {
+	text-decoration: none;
+}
+
+/* to remove the bullet points */
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+img {
+	width: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+/* buttons */
+.btn {
+	background: var(--clr-primary-2);
+	border-radius: 3px;
+	padding: 0.295rem 0.9rem;
+	box-shadow: var(--shadow-sm);
+	transition: var(--transition);
+	display: inline-block;
+	border: transparent;
+	font-size: 1.01rem;
+	letter-spacing: var(--spacing-wide);
+	text-transform: capitalize;
+	transition: var(--transition);
+	color: var(--clr-white);
+}
+
+.btn:hover {
+	background: var(--clr-primary-4);
+}
+
+/* 
+===============
+Loading
+===============
+*/
+
+@keyframes spinner {
+	0% {
+		transform: rotate(0deg);
+		box-shadow: 0 0 0 0 var(--clr-primary-8);
+	}
+	50% {
+		transform: rotate(180deg);
+		box-shadow: 0 0 10px 5px var(--clr-primary-6);
+	}
+	100% {
+		transform: rotate(360deg);
+		box-shadow: 0 0 0 0 var(--clr-primary-8);
+	}
+}
+
+.loading {
+	height: 4rem;
+	width: 4rem;
+	margin: 8rem auto;
+	border: 5px solid var(--clr-grey-3);
+	border-radius: 50%;
+	border-top-color: var(--clr-primary-8);
+	animation: spinner 1s infinite cubic-bezier(0.5, 0.1, 0.5, 1);
+	box-shadow: 0 0 15px var(--clr-primary-8);
+	transition: box-shadow 0.5s ease;
+	position: relative;
+	/* to be changed dynamically */
+	/* display: none; */
+}
+
+.loading:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 50%;
+	border: 2px solid var(--clr-primary-6);
+	opacity: 0.5;
+	animation: spinner 2s infinite linear reverse;
+}
+
+.hide-loading {
+	display: none !important;
+}
+
+/* 
+===============
+Title
+===============
+*/
+
+.title {
+	text-align: center;
+	margin: 4rem auto;
+	text-transform: capitalize;
+	letter-spacing: var(--spacing-wide);
+	font-family: Georgia, "Times New Roman", Times, serif;
+	line-height: 2;
+}
+
+/* 
+===============
+Main CSS for cocktails
+===============
+*/
+
+.cocktail-form {
+	display: grid;
+	place-items: center;
+	margin-top: 4rem;
+	row-gap: 1rem;
+}
+
+.cocktail-form h2 {
+	font-size: 2rem;
+	text-transform: capitalize;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	color: var(--clr-primary-5);
+}
+
+#cocktail {
+	width: 80%;
+	line-height: 2rem;
+	max-width: 25rem;
+	padding-left: 0.251rem;
+	background: var(--clr-white);
+	border: transparent;
+	border: 1px solid var(--clr-grey-7);
+	outline: none;
+	font-size: 1rem;
+}
+
+#cocktail::placeholder {
+	text-transform: capitalize;
+}
+
+#cocktail:focus {
+	border: 1px solid var(--clr-grey-1);
+	border: 1px solid var(--clr-primary-3);
+}
+
+.section-center {
+	width: 90vw;
+	max-width: var(--max-width);
+	margin: 0 auto;
+	margin-top: 4rem;
+}
+
+.cocktail-container {
+	background: var(--clr-white);
+	padding: 0.7rem;
+	margin-bottom: 1rem;
+	position: relative;
+}
+
+.cocktail-container img {
+	height: 20rem;
+	object-fit: cover;
+	width: 100%;
+}
+.cocktail-container h3 {
+	position: absolute;
+	top: -0.2rem;
+	right: -1rem;
+	background: red;
+	color: white;
+	padding: 0.1rem 0.3rem;
+}
+
+@media screen and (min-width: 468px) {
+	.section-center {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		column-gap: 2rem;
+	}
+}
+
+/* 
+===============
+Single drink
+===============
+*/
+
+.single-drink {
+	width: 90vw;
+	max-width: var(--max-width);
+	margin: 0 auto;
+	margin-top: 4rem;
+}
+
+.single-drink img {
+	height: 25rem;
+	margin-bottom: 1.5rem;
+	background: white;
+	padding: 0.3rem;
+	border-radius: 4px;
+}
+
+.drink-name {
+	font-size: 2rem;
+	color: var(--clr-primary-7);
+	margin-bottom: 0.9rem;
+}
+
+.drink-description {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	color: var(--clr-grey-3);
+	margin-bottom: 0.8rem;
+}
+
+.drink-ingredients {
+	text-transform: capitalize;
+	list-style: circle;
+	padding-left: 2rem;
+	margin-top: 0.3rem;
+}
+
+.btn-home {
+	margin-top: 1rem;
+}
+
+@media screen and (min-width: 668px) {
+	.single-drink {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 2rem;
+	}
+}
+
+.btn-home {
+	border-radius: 10px;
+	box-shadow: var(--shadow-inner);
+	padding: 0.4rem 1rem;
+	box-shadow: var(--shadow-lg);
+}
