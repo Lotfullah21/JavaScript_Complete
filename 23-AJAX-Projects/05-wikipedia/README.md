@@ -107,6 +107,10 @@ for image, we could have aligned the image just as text using `text-align:center
 <figcaption><p align="center">finished work</p><figcaption>
 </figure>
 
+## const foundData = data.query.search;
+
+This is where array of data lives
+
 <!-- HTML before adding them dynamically -->
 
 ```html

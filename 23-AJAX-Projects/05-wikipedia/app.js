@@ -9,7 +9,7 @@ const inputValue = get(".input-value");
 console.log(formDom, inputForm, answer);
 
 formDom.addEventListener("submit", (e) => {
-	http: e.preventDefault();
+	e.preventDefault();
 	const value = inputValue.value;
 	if (!value) {
 		answer.innerHTML = `<div class="error">please enter some value</div>`;
@@ -30,7 +30,11 @@ const fetchPages = async (searchValue) => {
 			return;
 		}
 		renderAnswers(foundData);
-	} catch (error) {}
+		console.log("data", data);
+		console.log("found data", foundData);
+	} catch (error) {
+		console.log(error);
+	}
 };
 
 const renderAnswers = (answers) => {
