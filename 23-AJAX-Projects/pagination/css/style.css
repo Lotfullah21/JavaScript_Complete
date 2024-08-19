@@ -1,329 +1,297 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 :root {
-  /* primary cylan color */
-  --clr--primary-50: #59ffff;
-  --clr--primary-100: #0dffff;
-  --clr--primary-200: #1adbbe;
-  --clr--primary-300: #1ad7bb;
-  --clr--primary-400: #29a794;
-  --clr--primary-500: #008c8c;
-  --clr--primary-600: #007373;
-  --clr--primary-700: #005959;
-  --clr--primary-800: #004040;
-  --clr--primary-900: #002626;
-  --clr--primary-1000: #000d0d;
+	--clr-primary-1: rgb(64, 0, 0);
+	--clr-primary-2: rgb(79, 12, 12);
+	--clr-primary-3: rgb(111, 17, 17);
+	--clr-primary-4: rgb(142, 22, 22);
+	--clr-primary-5: rgb(174, 26, 26);
+	--clr-primary-6: rgb(206, 31, 31);
+	--clr-primary-7: rgb(224, 49, 49);
+	--clr-primary-8: rgb(229, 81, 81);
+	--clr-primary-9: rgb(233, 113, 113);
+	--clr-primary-10: rgb(243, 176, 176);
 
-  /* primary gray color mdigi */
-  --clr--grey-50: #e5e6f1;
-  --clr--grey-100: #b5b5d8;
-  --clr--grey-200: #a4a4c4;
-  --clr--grey-300: #8f8fbb;
-  --clr--grey-400: #a1a1aa;
-  --clr--grey-500: #71717a;
-  --clr--grey-600: #52525b;
-  --clr--grey-700: #3f3f46;
-  --clr--grey-800: #27272a;
-  --clr--grey-900: #18181b;
-  --clr--grey-1000: #09090b;
+	/* Darker shades */
+	--clr-secondary-1: rgb(1, 13, 18);
+	--clr-secondary-2: rgb(5, 57, 80);
+	--clr-secondary-3: rgb(1, 7, 9);
+	--clr-secondary-4: rgb(12, 144, 203);
+	/* Main color */
+	--clr-secondary-5: rgb(14, 170, 241);
+	/* Lighter shades */
+	--clr-secondary-6: rgb(68, 189, 244);
+	--clr-secondary-7: rgb(66, 188, 244);
+	--clr-secondary-8: rgb(100, 201, 246);
+	--clr-secondary-9: rgb(169, 225, 250);
+	--clr-secondary-10: rgb(238, 249, 254);
 
-  /* important colors */
-  --clr-white: rgb(255, 255, 255);
-  --clr-black: #080808;
-  --clr--blue-dark: #1e40af;
-  --clr--blue-light: #3b82f6;
-  --clr--red-dark: #730000;
-  --clr--red-light: #ff0d0d;
-  --clr--green-dark: #008c00;
-  --clr--green-light: #008c00;
-  --clr--purble-dark: #590059;
-  --clr--purple-light: #590059;
+	/* Dark grey used for headings */
+	--clr-grey-1: rgb(9, 9, 9);
+	--clr-grey-2: rgb(27, 27, 27);
+	--clr-grey-3: rgb(43, 43, 48);
+	--clr-grey-4: rgb(44, 44, 47);
+	/* Grey used for paragraphs */
+	--clr-grey-5: rgb(25, 27, 29);
+	--clr-grey-6: rgb(137, 137, 137);
+	--clr-grey-7: rgb(155, 155, 155);
+	--clr-grey-8: rgb(222, 228, 233);
+	--clr-grey-9: rgb(242, 242, 242);
+	--clr-grey-10: rgb(244, 246, 248);
 
-  /* some other variables */
-  --headingFont: "Scada", sans-serif;
-  --bodyFont: "Cherry Swash", sans-serif;
-  --borderRadius: 0.25rem;
-  --letterSpacing: 1.1px;
-  --transition: 0.3s all linear;
-  --smallText: 0.8em;
-  --max-width: 1250px;
-  --fixed-width: 600px;
+	--clr-white: #fff;
+	--clr-black: #000;
+	--transition: all linear 0.31s;
+	--spacing-wide: 0.07em;
+	--spacing-wider: 0.1em;
+	--spacing-per: 0.01em;
+	--shadow-sm: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+	--shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+		0 4px 6px -4px rgb(0 0 0 / 0.1);
+	--shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+		0 8px 10px -6px rgb(0 0 0 / 0.1);
+	--shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+	--max-width-nav: 1492px;
+	--max-width: 1292px;
+	--underline-primary: rgb(14, 170, 241);
+	--underline-secondary: rgb(224, 49, 49);
 
-  /* important variables */
-  --backgroundColor: var(--clr--grey-50);
-  --textColor: var(--clr--grey-950);
-  --border-line: 3px solid rgb(98, 211, 6);
+	/* important colors */
+	--clr-white: rgb(255, 255, 255);
+	--clr-black: #080808;
+	--clr--blue-dark: #1e40af;
+	--clr--blue-light: #3b82f6;
+	--clr--red-dark: #730000;
+	--clr--red-light: #ff0d0d;
+	--clr--green-dark: #008c00;
+	--clr--green-light: #008c00;
+	--clr--purple-light: #590059;
 
-  /* box-shadoo tailwand */
-  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-    0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-    0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+	--smallText: 0.8em;
+	--max-width: 1172px;
+	--fixed-width: 600px;
+
+	--shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
 }
 
-html {
-  scroll-behavior: smooth;
+/* 
+
+=============
+Global styles
+=============
+
+*/
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  background: var(--clr--grey-50);
-  font-family: var(--bodyFont);
-  font-weight: 400;
-  line-height: 1.65;
-  color: var(--textColor);
-}
-
-p {
-  max-width: 40em;
+	background: var(--clr-grey-9);
+	color: var(--clr-grey-1);
+	line-height: 1.4;
+	font-size: 0.975rem;
+	letter-spacing: var(--spacing-per);
 }
 
 h1,
 h2,
 h3,
-h4,
-h5 {
-  margin: 0;
-  /* margin-bottom: 1.4rem; */
-  font-family: var(--headingFont);
-  font-weight: 400;
-  line-height: 1.3;
-  text-transform: capitalize;
+h4 {
+	line-height: 1.25;
+	letter-spacing: var(--spacing);
+	margin-bottom: 0.75rem;
 }
 
 h1 {
-  margin-top: 0;
-  font-size: 3.052rem;
+	font-size: 3rem;
 }
-
 h2 {
-  font-size: 2.441rem;
+	font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.953rem;
+	font-size: 1.25rem;
 }
-
 h4 {
-  font-size: 1.563rem;
+	font-size: 0.875rem;
 }
 
-h5 {
-  font-size: 1.25rem;
+p {
+	margin-bottom: 0.35rem;
+	color: var(--clr-grey-5);
+	font-size: 1rem;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-small,
-.text_small {
-  font-size: 0.8rem;
+img {
+	width: 100%;
+	display: block;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 /* to remove under scores */
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 /* to remove the bullet points */
 ul {
-  list-style-type: none;
-  padding: 0;
+	list-style-type: none;
+	padding: 0;
 }
 
-/* 
-===============
-Images
-===============
-*/
-
-/* images by default are going to use their own width and height */
-/* control by their parent container,which means take only as much is your parent can take. */
-img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-  height: 100%;
+img:not(.nav-photo) {
+	width: 100%;
+	display: block;
+	object-fit: cover;
 }
-
-/* if we do not add display block, there will be some empty space in bottom of the image around borders. */
 
 /* buttons */
 .btn {
-  cursor: pointer;
-  color: whitesmoke;
-  font-size: 1.093rem;
-  background: black;
-  border: transparent;
-  border-radius: var(--borderRadius);
-  padding: 0.475rem 0.7rem;
-  letter-spacing: var(--letterSpacing);
-  text-transform: capitalize;
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition);
-  /* add this so that the margin can be respected and based on browser, it can be positioned. */
-  display: inline-block;
-  transition: var(--transition);
+	cursor: pointer;
+	color: whitesmoke;
+	font-size: 1.093rem;
+	background: var(--clr--primary-700);
+	border: transparent;
+	border-radius: var(--borderRadius);
+	padding: 0.475rem 0.7rem;
+	letter-spacing: var(--letterSpacing);
+	text-transform: capitalize;
+	box-shadow: var(--shadow-sm);
+	transition: var(--transition);
+	/* add this so that the margin can be respected and based on browser, it can be positioned. */
+	display: inline-block;
+	transition: var(--transition);
 }
-
 .btn:hover {
-  color: white;
-  background: black;
+	color: var(--clr--primary-100);
+	background: black;
 }
 
 /* 
-===============
-Loading
-===============
+
+=============
+Sidebar
+=============
+
 */
-
-@keyframes spinner {
-  to {
-    transform: rotate(360deg);
-  }
+#toggle {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 1.9rem;
+	background: transparent;
+	border: transparent;
+	color: var(--clr-secondary-5);
+	transition: var(--transition);
+	cursor: pointer;
+	display: block;
 }
 
-.loading {
-  height: 4rem;
-  width: 4rem;
-  border: 3px solid var(--clr--grey-300);
-  border-radius: 50%;
-  text-align: center;
-  margin: 0 auto;
-  border-top-color: var(--clr--primary-800);
-  animation: spinner 0.6s infinite linear;
-}
-.hide-loading {
-  display: none;
+.toggle:hover {
+	color: var(--clr-secondary-6);
 }
 
-.loading {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+.sidebar h3 {
+	margin-bottom: 0;
+	color: var(--clr-white);
+	letter-spacing: var(--spacing-wide);
+	font-family: Arial, Helvetica, sans-serif;
+	cursor: pointer;
 }
 
-/* 
-===============
-Card
-===============
-*/
-
-.section-title {
-  margin: 4rem auto;
-  text-align: center;
+.sidebar {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: var(--clr-grey-5);
+	z-index: 3;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr auto;
+	transition: all linear 2s;
+	/* By default, the sidebar will be hidden */
+	transform: translateX(-100%);
 }
 
-.underline {
-  width: 10rem;
-  height: 0.2rem;
-  background: var(--clr--blue-dark);
-  margin: 0 auto;
-}
-.following {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: var(--max-width);
-}
-.container {
-  padding: 2rem 3rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
+@media screen and (min-width: 600px) {
+	.sidebar {
+		max-width: 440px;
+	}
 }
 
-@media screen and (min-width: 500px) {
-  .container {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
+.sidebar-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	background: var(--clr-secondary-1);
 }
 
-.card img {
-  border-top-left-radius: var(--borderRadius);
-  border-top-right-radius: var(--borderRadius);
-  width: 223px;
-  height: 280px;
-  object-fit: cover;
-}
-.card {
-  display: grid;
-  grid-template-rows: repeat(3, auto);
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  row-gap: 0.2rem;
-  background: rgb(250, 248, 248);
-  border-radius: var(--borderRadius);
-  padding-top: 0rem;
-  padding-bottom: 1rem;
-  box-shadow: var(--shadow-lg);
+#close-btn {
+	font-size: 1.9rem;
+	background: transparent;
+	border: transparent;
+	color: var(--clr-primary-6);
+	transition: var(--transition);
+	cursor: pointer;
 }
 
-.card h4 {
-  letter-spacing: var(--letterSpacing);
-  color: var(--clr--primary-900);
-  margin-bottom: 0.4rem;
-}
-.card a {
-  text-transform: capitalize;
-  letter-spacing: var(--letterSpacing);
-  color: white;
-  font-size: 1.1rem;
-  background: var(--clr--primary-800);
-  border-radius: var(--borderRadius);
-  padding: 0 1rem;
+.close-btn:hover {
+	color: var(--clr-primary-8);
 }
 
-/* 
-===============
-Button
-===============
-*/
-
-.btn-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  justify-content: first baseline;
-  padding: 2rem;
-  border: var(--border-line);
+.sidebar-links a {
+	display: block;
+	padding: 1rem 1rem;
+	margin: 0.4rem 0;
+	text-transform: capitalize;
+	color: var(--clr-secondary-5);
+	letter-spacing: var(--spacing-wide);
+	font-size: 1.4rem;
+	transition: var(--transition);
+	/* border: 2px silver solid; */
 }
 
-.page-btn {
-  padding: 0.5rem 0.9rem;
-  margin: 0.3rem;
-  background: var(--clr--primary-1000);
-  color: white;
-  border-radius: var(--borderRadius);
-  cursor: pointer;
-  border: transparent;
-  font-size: 1.3rem;
+.sidebar-links a:hover {
+	padding-left: 1.4rem;
+	background-color: var(--clr-secondary-3);
+	color: var(--clr-secondary-5);
 }
 
-.active {
-  background: var(--clr--blue-dark);
-  color: white;
+.social-links {
+	display: flex;
+	align-self: flex-end;
+	margin-top: 2rem;
+	justify-content: center;
+	padding: 2rem;
+	background: var(--clr-secondary-1);
 }
 
-.prev-btn,
-.next-btn {
-  background: transparent;
-  border-color: transparent;
-  font-weight: bold;
-  text-transform: capitalize;
-  letter-spacing: var(--spacing);
-  margin: 0.5rem;
-  font-size: 1.11rem;
-  cursor: pointer;
-  color: var(--clr--primary-1000);
+.social-links a {
+	margin-left: 2rem;
+	font-size: 1.1rem;
+	color: var(--clr-secondary-7);
+	transition: var(--transition);
 }
-@media screen and (min-width: 800px) {
-  .btn-container {
-    margin: 0 auto;
-    max-width: 800px;
-  }
+
+.social-links a:hover {
+	color: var(--clr-secondary-8);
+}
+
+.show-sidebar {
+	transform: translateX(0);
+	transition: all linear 2s;
 }

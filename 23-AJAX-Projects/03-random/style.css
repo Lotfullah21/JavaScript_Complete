@@ -94,7 +94,7 @@ Global styles
 }
 
 body {
-	background: var(--clr-grey-8);
+	background: var(--clr-grey-9);
 	color: var(--clr-grey-1);
 	line-height: 1.4;
 	font-size: 0.975rem;
@@ -149,6 +149,27 @@ img {
 	width: 100%;
 	display: block;
 	object-fit: cover;
+	height: 100%;
+}
+
+/* buttons */
+.btn {
+	background: var(--clr-primary-2);
+	border-radius: 3px;
+	padding: 0.295rem 0.9rem;
+	box-shadow: var(--shadow-sm);
+	transition: var(--transition);
+	display: inline-block;
+	border: transparent;
+	font-size: 1.01rem;
+	letter-spacing: var(--spacing-wide);
+	text-transform: capitalize;
+	transition: var(--transition);
+	color: var(--clr-white);
+}
+
+.btn:hover {
+	background: var(--clr-primary-4);
 }
 
 /* 
@@ -158,194 +179,139 @@ Loading
 */
 
 @keyframes spinner {
-	0% {
-		transform: rotate(0deg);
-		box-shadow: 0 0 0 0 var(--clr-primary-8);
-	}
-	50% {
-		transform: rotate(180deg);
-		box-shadow: 0 0 10px 5px var(--clr-primary-6);
-	}
-	100% {
+	to {
 		transform: rotate(360deg);
-		box-shadow: 0 0 0 0 var(--clr-primary-8);
 	}
 }
 
 .loading {
 	height: 4rem;
 	width: 4rem;
-	margin: 8rem auto;
-	border: 5px solid var(--clr-grey-3);
+	border: 3px solid var(--clr-grey-3);
 	border-radius: 50%;
-	border-top-color: var(--clr-primary-8);
-	animation: spinner 1s infinite cubic-bezier(0.5, 0.1, 0.5, 1);
-	box-shadow: 0 0 15px var(--clr-primary-8);
-	transition: box-shadow 0.5s ease;
-	position: relative;
-	/* to be changed dynamically */
-	/* display: none; */
-}
-
-.loading:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	border-radius: 50%;
-	border: 2px solid var(--clr-primary-6);
-	opacity: 0.5;
-	animation: spinner 2s infinite linear reverse;
-}
-
-.hide-loading {
-	display: none !important;
-}
-
-/* 
-===============
-Title
-===============
-*/
-
-.title {
 	text-align: center;
-	margin: 4rem auto;
-	text-transform: capitalize;
-	letter-spacing: var(--spacing-wide);
-	font-family: Georgia, "Times New Roman", Times, serif;
-	line-height: 2;
+	margin: 0 auto;
+	border-top-color: var(--clr--primary-8);
+	animation: spinner 0.6s infinite linear;
 }
 
+.loading {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
 /* 
 ===============
-Wikipedia
+Section
 ===============
 */
 
-.wiki {
-	padding: 6rem 3rem;
-	width: 90vw;
-	margin: 0 auto;
-	max-width: var(--max-width);
+.block-1 {
+	min-height: 50vh;
+	background: var(--clr-black);
 }
 
 .container {
-	text-align: center;
-}
-
-.container img {
-	width: 200px;
-	/* If did  */
-	margin: 0 auto;
-	margin-bottom: 1rem;
-}
-
-.container h3 {
-	margin-bottom: 1rem;
-	font-size: 1.3rem;
-	text-transform: capitalize;
-}
-
-.form-search {
+	padding: 1rem 0.4rem;
 	display: grid;
-	grid-template-columns: auto 90px;
-	background: white;
+	place-items: center;
+	row-gap: 0.6rem;
+	background: var(--clr-grey-8);
+	width: 90vw;
 	max-width: var(--fixed-width);
 	margin: 0 auto;
+	/* To get another background to position itself related to the container */
+	position: relative;
 	border-radius: var(--border-radius);
+	box-shadow: var(--shadow-lg);
 }
 
-.input-value {
-	/* To have a beautiful alignment with button at the same line */
-	outline: none;
-	line-height: 2;
-	font-size: 1rem;
-	padding-left: 0.21rem;
-	border: transparent;
-	border-radius: var(--border-radius);
-}
-
-.input-value:focus {
-	outline: 1px solid var(--clr-grey-4);
-}
-
-.submit-btn {
-	border: 0.11px solid var(--primary-5);
-	border-left: transparent;
-	border-top-right-radius: var(--border-radius);
-	border-bottom-right-radius: var(--border-radius);
-	text-transform: capitalize;
-	background: var(--clr-primary-5);
-	color: var(--clr-white);
-	transition: var(--transition);
-	cursor: pointer;
-	letter-spacing: var(--spacing-wide);
-	font-size: 1.09rem;
-}
-
-.submit-btn:hover {
-	background: var(--clr-primary-6);
-}
-
-/* 
-===============
-Wikipedia
-===============
-*/
-
-.results {
-	padding: 2rem 0;
-}
-
-.articles {
-	display: grid;
-	gap: 1rem;
-}
-
-.articles a {
+.user-img {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	padding: 0.1rem;
+	border: 4px solid var(--clr-white);
+	margin: 0 auto;
+	margin-bottom: 1.1rem;
 	background: var(--clr-white);
-	padding: 1rem;
-	border-radius: var(--border-radius);
-	transition: var(--transition);
-	display: block;
+	position: relative;
 }
 
-.article-title {
-	text-align: center;
-	margin-bottom: 0.11rem;
-	text-transform: capitalize;
-	font-size: 1.1rem;
+.user-info {
+	font-size: 1.3rem;
+	color: var(--clr-grey-2);
+	letter-spacing: var(--spacing-wide);
 }
 
-.articles p {
-	transition: var(--transition);
-}
-
-.articles a:hover {
-	background: var(--clr-black);
-	color: var(--clr-white);
-}
-
-.articles a:hover p {
-	color: var(--clr-white);
-}
-
-@media screen and (min-width: 768px) {
-	.articles {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-@media screen and (min-width: 992px) {
-	.articles {
-		grid-template-columns: repeat(3, 1fr);
-	}
-}
-
-.error {
-	color: var(--clr-primary-7);
+.user-value {
 	font-size: 1.2rem;
-	text-align: center;
+	letter-spacing: var(--spacing-wider);
+	color: var(--clr-primary-6);
+}
+
+.user-details {
+	padding: 0.4rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.icon {
+	font-size: 1.3rem;
+	color: var(--clr-primary-2);
+	transition: var(--transition);
+	padding: 0.2rem;
+	cursor: pointer;
+	transition: var(--transition);
+	margin: 0 0.9rem; /* Added margin to space icons */
+	background: transparent;
+	border: transparent;
+}
+
+.icon:hover {
+	color: var(--clr-primary-4);
+}
+
+.icon.active {
+	color: var(--clr--green-light);
+}
+
+.random-user-btn {
+	padding: 0.195rem 2rem;
+	display: inline-block;
+	border: transparent;
+	background: var(--clr-primary-2);
+	font-size: 1.01rem;
+	letter-spacing: var(--spacing-wider);
+	text-transform: capitalize;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: var(--transition);
+	box-shadow: var(--shadow-sm);
+}
+
+.random-user-btn:hover {
+	background: var(--clr-primary-4);
+}
+
+/* Now, lets move the container up */
+
+.container {
+	margin-top: -9rem;
+}
+
+.container::before {
+	content: "";
+	background: var(--clr--red-dark);
+	background: var(--clr--red-light);
+	background: var(--clr--blue-light);
+	background: var(--clr--green-light);
+	width: 100%;
+	height: 120px;
+	top: 0;
+	left: 0;
+	/* Crucial to get the background color on top and behind the image. */
+	position: absolute;
+	border-top-right-radius: var(--border-radius);
+	border-top-left-radius: var(--border-radius);
+	border-bottom: 3px solid var(--clr-primary-6);
 }
