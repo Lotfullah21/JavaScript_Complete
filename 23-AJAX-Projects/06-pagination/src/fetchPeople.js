@@ -10,9 +10,6 @@ const fetchFollowers = async () => {
 	}
 };
 
-const accessToken = "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";
-const githubUsername = "Lotfullah21";
-
-const fetchPeople = fetchFollowers(githubUsername, accessToken);
+// const fetchPeople = fetchFollowers(githubUsername, accessToken);
 
 export default fetchFollowers;
