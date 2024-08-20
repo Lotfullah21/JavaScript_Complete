@@ -1,15 +1,15 @@
-const displayButton = (container, pages, inUseIndex) => {
-  // for each pages array, give us a button,if inUseIndex === current index, add active class to it
-  const btns = pages.map((_, currentIndex) => {
-    return `<button class="page-btn ${
-      currentIndex === inUseIndex ? "active" : "null"
-    }" data-index=${currentIndex}>${currentIndex + 1}</button>`;
-  });
-  // still inside the button array,add next-btn to the end of the array
-  btns.push('<button class="next-btn">next</button>');
-  btns.unshift('<button class="prev-btn">prev</button>');
-  // turn into a string
-  container.innerHTML = btns.join("");
+const displayButtons = (container, pages, activeIdx) => {
+	let btns = pages.map((item, pageIdx) => {
+		return `<button class="page-btn ${
+			activeIdx === pageIdx ? "active-btn" : "null"
+		}" data-index=${pageIdx}>${pageIdx + 1}</button>`;
+	});
+	console.log(btns);
+	// Our btns is still an array
+	btns.push(`<button class="next-btn">next</button>`);
+	btns.unshift(`<button class="prev-btn">prev</button>`);
+	console.log("After adding btns", btns);
+	container.innerHTML = btns.join("");
 };
 
-export default displayButton;
+export default displayButtons;
